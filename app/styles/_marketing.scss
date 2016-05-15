@@ -27,13 +27,13 @@
 }
 .tags {
 	margin-top: 20px;
-	a {
-		color:$link-color;
-	    background: $secondary-color;
-	    border-radius: 6px;
-	    padding: 5px 10px;
-	    &:hover {
-	    	background: lighten($secondary-color,10%);
-	    }
-	}
+}
+a.tag {
+	color:$link-color;
+    background: $secondary-color;
+    border-radius: 3px;
+    padding: 5px 10px;
+    &:hover {
+    	background: lighten($secondary-color,10%);
+    }
 }

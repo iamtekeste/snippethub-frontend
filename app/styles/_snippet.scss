@@ -1,0 +1,29 @@
+.snippets-container {
+    margin-top: 20px;
+    .snippet-box {
+    	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	    background-color: #fff;
+	    padding: 20px;
+	    padding-bottom: 0;
+	    margin-bottom: 20px;
+    }
+    .snippet-details {
+        background-color: #f9f9f9;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 20px 20px;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    .snippet-title {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: "RobotoSlabBold";
+    }
+    .description {
+        margin-bottom: 10px;
+    }
+    ul.tags {
+        margin-top: 15px;
+    }
+}

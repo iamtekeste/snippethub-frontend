@@ -7,6 +7,7 @@ $icon-font-path: '../fonts/';
 
 body {
   font-family: $regular-font;
+  background-color:#EEE;
   a {
     &:hover {
       text-decoration: none;
@@ -23,3 +24,4 @@ h1 {
 @import "fonts";
 @import "header";
 @import "marketing";
+@import "snippet";
