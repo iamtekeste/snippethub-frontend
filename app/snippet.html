@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to SnippetHub</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="brand">
+          <h1>
+            {S} SnippetHub
+          </h1>
+        </div>
+        <nav class="main-nav">
+          <ul class="list-inline">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Snippets</a></li>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">People</a></li>
+          </ul>
+        </nav>
+        <div class="account">
+          <ul class="list-inline">
+            <li><a href="#">Login</a></li>
+            <li><a class="register" href="#">Register</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Header -->
+      <div class="marketing">
+        <h1>Welcome to SnippetHub</h1>
+        <h2>Create awesome code snippets.</h2>
+        <div class="search">
+          <input type="text" placeholder="Start typing" class="search-box">
+          <div class="tags">
+            <ul class="list-inline">
+              <li><a href="" class="tag">JavaScript</a></li>
+              <li><a href="" class="tag">JavaScript</a></li>
+              <li><a href="" class="tag">JavaScript</a></li>
+              <li><a href="" class="tag">JavaScript</a></li>
+              <li><a href="" class="tag">JavaScript</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Marketing -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="single-snippet paper">
+              <div class="heading">
+                <h2>String left pad</h2>
+                <div class="actions">
+                  <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                  <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                </div>
+              </div>
+              <div class="body">
+                <div class="code-snippet">
+                                    <pre>
+                                      <code class="language-javascript">
+module.exports = leftpad;
+function leftpad (str, len, ch) {
+  str = String(str);
+  var i = -1;
+  if (!ch && ch !== 0) ch = ' ';
+  len = len - str.length;
+  while (++i < len) {
+    str = ch + str;
+  }
+  return str;
+}
+                                      </code>
+                                    </pre>
+                </div>
+                <div class="snippet-details">
+                  <div class="snippet-title">
+                    String left pad
+                  </div>
+                  <div class="description">
+                    The infamous left-pad npm package that shook the NodeJs community
+                  </div>
+                  <ul class="list-inline tags">
+                    <li><a href="" class="tag">JavaScript</a></li>
+                    <li><a href="" class="tag">NodeJS</a></li>
+                    <li><a href="" class="tag">left-pad</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        Handcrafted with <span class="heart">💙</span> by Haftom, Tarekegn, Tekeste & Yirgalem
+      </footer>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/prism.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

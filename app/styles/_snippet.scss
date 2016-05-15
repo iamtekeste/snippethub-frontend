@@ -1,4 +1,4 @@
-.snippets-container {
+.snippets-container, .single-snippet {
     margin-top: 20px;
     a {
         color:#000;
@@ -36,5 +36,30 @@
         a {
             color:#fff;
         }
+    }
+}
+
+/* Edit snippet */
+.single-snippet.paper {
+    .body {
+        padding-bottom:0px;
+    }
+    max-width: 800px;
+    margin: 0 auto;
+    .actions {
+        display:inline-block;
+        float: right;
+        a {
+            font-size: 16px;
+            color:#fff;
+        }
+        a.trash {
+            color: red;
+            margin-left: 10px;
+        }
+    }
+    .snippet-details {
+        margin-left: -10px;
+        margin-right: -10px;
     }
 }
