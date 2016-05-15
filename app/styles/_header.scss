@@ -1,0 +1,50 @@
+.header {
+    background: $secondary-color;
+    color: #fff;
+    padding: 10px 15px;
+    li {
+    	padding:0px 10px;
+    }
+    a {
+    	color: #fff;
+    	font-size:18px;
+    	&:hover {
+    		text-decoration: none;
+    	}
+    }
+}
+.brand, nav.main-nav, .account {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 40px;
+}
+.brand {
+    width:30%;
+}
+.main-nav {
+	a {
+		position: relative;
+		&::before {
+		    position: absolute;
+		    bottom: -10px;
+		    content: "";
+		    height: 1px;
+		    background: #fff;
+		    width: 0px;
+			transition: all .3s ease-in;
+		}
+		&:hover {
+			&::before {
+				width:100%;
+			}
+		}
+	}
+}
+.account {
+    float: right;
+    .register {
+    	border: 2px solid;
+    	border-radius: 5px;
+    	padding: 5px 10px;
+    }
+}
