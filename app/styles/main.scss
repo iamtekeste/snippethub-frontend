@@ -13,6 +13,9 @@ body {
       text-decoration: none;
     }
   }
+  input[type="radio"]:focus, input[type="checkbox"]:focus {
+      outline: 0;
+  }
 }
 h1,ul{
   margin:0;
@@ -33,4 +36,5 @@ h1 {
 /* Login */
 @import "login";
 @import "register";
+@import "addSnippet";
 

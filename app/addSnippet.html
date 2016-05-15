@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to SnippetHub</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="brand">
+          <h1>
+            {S} SnippetHub
+          </h1>
+        </div>
+        <nav class="main-nav">
+          <ul class="list-inline">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Snippets</a></li>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">People</a></li>
+          </ul>
+        </nav>
+        <div class="account">
+          <ul class="list-inline">
+            <li><a href="#">Login</a></li>
+            <li><a class="register" href="#">Register</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Header -->
+      <div class="marketing">
+        <h1>Welcome to SnippetHub</h1>
+        <h2>Create awesome code snippets.</h2>
+        <div class="search">
+          <input type="text" placeholder="Start typing" class="search-box">
+          <div class="tags">
+            <ul class="list-inline">
+              <li><a href="" class="tag">JavaScript</a></li>
+              <li><a href="" class="tag">JavaScript</a></li>
+              <li><a href="" class="tag">JavaScript</a></li>
+              <li><a href="" class="tag">JavaScript</a></li>
+              <li><a href="" class="tag">JavaScript</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Marketing -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="add-edit-snippet paper">
+              <div class="heading">
+                <h2>New Snippet</h2>
+              </div>
+              <div class="body">
+                <form action="#" class="form-horizontal">
+                  <select name="language" id="language-list" class="form-control">
+                    <option value="">Select Language</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="java">Java</option>
+                  </select>
+                  <input type="text" class="form-control" placeholder="Title">
+                  <textarea placeholder="//Your Code Here" name="content" id="codeEditor" cols="30" rows="10" class="form-control"></textarea>
+                  <textarea name="description" id="description" cols="30" rows="5" class="form-control" placeholder="What does it do?"></textarea>
+                  
+                  <div class="visiblity-control">
+                    <div>
+                      Visiblity
+                    </div>
+                    <label class="radio-inline"><input type="radio" name="visiblity">Private</label>
+                    <label class="radio-inline"><input type="radio" name="visiblity">Public</label>
+                  </div>
+                  <select name="tags" id="tag-list" class="form-control">
+                    <option value="">Select Tag</option>
+                    <option value="javascript">Recursion</option>
+                    <option value="php">PHP</option>
+                    <option value="java">Java</option>
+                  </select>
+                  <a href="#" class="create-tag"> Or add your own tag</a>
+                  <input type="submit" class="login btn" value="Save">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        Handcrafted with <span class="heart">💙</span> by Haftom, Tarekegn, Tekeste & Yirgalem
+      </footer>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/prism.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
