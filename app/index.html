@@ -67,51 +67,79 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6">
-              <div class="snippet-box">
-                <div class="snippet-code">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero excepturi vero quibusdam ea fugiat eos, at maiores dicta ipsam veniam molestiae minus dolor amet, ab, laborum sed beatae aspernatur ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia ratione reprehenderit nemo ea qui perferendis. Rerum reiciendis optio consequuntur, dolorum sit ullam doloribus deserunt ad asperiores modi culpa enim.
-                </div>
-                <div class="snippet-details">
-                  <div class="snippet-title">
-                    React Component Creation
-                  </div>
-                  <div class="description">
-                    Lorem ipsum dolor sit amet,consectetur  adipisicing elit,
-                    sed do eiusmod
-                  </div>
-                  <ul class="list-inline tags">
-                    <li><a href="" class="tag">JavaScript</a></li>
-                    <li><a href="" class="tag">ReactJs</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <div class="snippet-box">
-                <div class="snippet-code">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero excepturi vero quibusdam ea fugiat eos, at maiores dicta ipsam veniam molestiae minus dolor amet, ab, laborum sed beatae aspernatur ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia ratione reprehenderit nemo ea qui perferendis. Rerum reiciendis optio consequuntur, dolorum sit ullam doloribus deserunt ad asperiores modi culpa enim.
-                </div>
-                <div class="snippet-details">
-                  <div class="snippet-title">
-                    React Component Creation
-                  </div>
-                  <div class="description">
-                    Lorem ipsum dolor sit amet,consectetur  adipisicing elit,
-                    sed do eiusmod
-                  </div>
-                  <ul class="list-inline tags">
-                    <li><a href="" class="tag">JavaScript</a></li>
-                    <li><a href="" class="tag">ReactJs</a></li>
-                  </ul>
-                </div>
-              </div>
+                <a href="#">
+                                <div class="snippet-box">
+                                  <div class="snippet-code">
+                                    <pre>
+                                      <code class="language-css">
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@font-face {
+  src: url(http://lea.verou.me/logo.otf);
+  font-family: 'LeaVerou';
+}
+                                      </code>
+                                    </pre>
+                                  </div>
+                                  <div class="snippet-details">
+                                    <div class="snippet-title">
+                                      React Component Creation
+                                    </div>
+                                    <div class="description">
+                                      Lorem ipsum dolor sit amet,consectetur  adipisicing elit,
+                                      sed do eiusmod
+                                    </div>
+                                    <ul class="list-inline tags">
+                                      <li><a href="" class="tag">JavaScript</a></li>
+                                      <li><a href="" class="tag">ReactJs</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-6">
+                                <div class="snippet-box">
+                                  <div class="snippet-code">
+                                    <pre class="">
+                                      <code class="language-javascript">
+                  gulp.task('styles', () => {
+                    return gulp.src('app/styles/*.scss')
+                      .pipe($.plumber())
+                      .pipe($.sourcemaps.init())
+                      .pipe($.sass.sync({
+                        outputStyle: 'expanded',
+                        precision: 10,
+                        includePaths: ['.']
+                      }).on('error', $.sass.logError))
+                      .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
+                      .pipe($.sourcemaps.write())
+                      .pipe(gulp.dest('.tmp/styles'))
+                      .pipe(reload({stream: true}));
+                  });
+                                      </code>
+                                    </pre>
+                                  </div>
+                                  <div class="snippet-details">
+                                    <div class="snippet-title">
+                                      React Component Creation
+                                    </div>
+                                    <div class="description">
+                                      Lorem ipsum dolor sit amet,consectetur  adipisicing elit,
+                                      sed do eiusmod
+                                    </div>
+                                    <ul class="list-inline tags">
+                                      <li><a href="" class="tag">JavaScript</a></li>
+                                      <li><a href="" class="tag">ReactJs</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                </a>
             </div>
           </div>
         </div>
       </div>
       <!-- End Snippets Container -->
       <footer>
-        Made with <span class="heart">💙</span> by Haftom, Tarekegn, Tekeste & Yirgalem
+        Handcrafted with <span class="heart">💙</span> by Haftom, Tarekegn, Tekeste & Yirgalem
       </footer>
     </div>
 
@@ -123,6 +151,7 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/prism.js"></script>
     <!-- endbuild -->
   </body>
 </html>
