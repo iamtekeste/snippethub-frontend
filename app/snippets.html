@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to SnippetHub</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="brand">
+          <h1>
+            {S} SnippetHub
+          </h1>
+        </div>
+        <nav class="main-nav">
+          <ul class="list-inline">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Snippets</a></li>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">People</a></li>
+          </ul>
+        </nav>
+        <div class="account">
+          <ul class="list-inline">
+            <li><a href="#">Login</a></li>
+            <li><a class="register" href="#">Register</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Header -->
+      <div class="snippets-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <a href="#">
+                                <div class="snippet-box">
+                                  <div class="snippet-code">
+                                    <pre>
+                                      <code class="language-css">
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@font-face {
+  src: url(http://lea.verou.me/logo.otf);
+  font-family: 'LeaVerou';
+}
+                                      </code>
+                                    </pre>
+                                  </div>
+                                  <div class="snippet-details">
+                                    <div class="snippet-title">
+                                      React Component Creation
+                                    </div>
+                                    <div class="description">
+                                      Lorem ipsum dolor sit amet,consectetur  adipisicing elit,
+                                      sed do eiusmod
+                                    </div>
+                                    <ul class="list-inline tags">
+                                      <li><a href="" class="tag">JavaScript</a></li>
+                                      <li><a href="" class="tag">ReactJs</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-6">
+                                <div class="snippet-box">
+                                  <div class="snippet-code">
+                                    <pre class="">
+                                      <code class="language-javascript">
+                  gulp.task('styles', () => {
+                    return gulp.src('app/styles/*.scss')
+                      .pipe($.plumber())
+                      .pipe($.sourcemaps.init())
+                      .pipe($.sass.sync({
+                        outputStyle: 'expanded',
+                        precision: 10,
+                        includePaths: ['.']
+                      }).on('error', $.sass.logError))
+                      .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
+                      .pipe($.sourcemaps.write())
+                      .pipe(gulp.dest('.tmp/styles'))
+                      .pipe(reload({stream: true}));
+                  });
+                                      </code>
+                                    </pre>
+                                  </div>
+                                  <div class="snippet-details">
+                                    <div class="snippet-title">
+                                      React Component Creation
+                                    </div>
+                                    <div class="description">
+                                      Lorem ipsum dolor sit amet,consectetur  adipisicing elit,
+                                      sed do eiusmod
+                                    </div>
+                                    <ul class="list-inline tags">
+                                      <li><a href="" class="tag">JavaScript</a></li>
+                                      <li><a href="" class="tag">ReactJs</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Snippets Container -->
+      <footer>
+        Handcrafted with <span class="heart">💙</span> by Haftom, Tarekegn, Tekeste & Yirgalem
+      </footer>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/prism.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

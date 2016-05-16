@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to SnippetHub</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="brand">
+          <h1>
+          {S} SnippetHub
+          </h1>
+        </div>
+        <nav class="main-nav">
+          <ul class="list-inline">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Snippets</a></li>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">People</a></li>
+          </ul>
+        </nav>
+        <div class="account">
+          <ul class="list-inline">
+            <li><a href="#">Login</a></li>
+            <li><a class="register" href="#">Register</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Header -->
+      <div class="container profile-container">
+        <div class="paper profile">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3">
+              <aside class="sidebar">
+                <a href="#" class="edit-profile">
+                  Edit
+                  <span class="glyphicon glyphicon-pencil"></span>
+                </a>
+                <img src="images/profile.jpg" alt="Profile image" class="profile-img">
+                <div class="user-info">
+                  <h1>Melissa Troy</h1>
+                  <h2>meli@gmail.com</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quis corporis, aperiam nulla et repudiandae ipsam numquam aut delectus dignissimos cupiditate iste perferendis vitae repellendus, facilis nihil minus. Nihil, totam.
+                  </p>
+                </div>
+              </aside>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+              <div class="row">
+                <!-- Single snippet box -->
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#">
+                    <div class="snippet-box">
+                      <div class="snippet-code">
+                        <pre>
+                          <code class="language-jsx">
+module.exports = leftpad;
+function leftpad (str, len, ch) {
+  str = String(str);
+  var i = -1;
+  if (!ch && ch !== 0) ch = ' ';
+  len = len - str.length;
+  while (++i < len) {
+    str = ch + str;
+  }
+  return str;
+}
+                          </code>
+                        </pre>
+                      </div>
+                      <div class="snippet-details">
+                        <div class="snippet-title">
+                          React Component Creation
+                        </div>
+                        <div class="description">
+                          Lorem ipsum dolor sit amet,consectetur  adipisicing elit,
+                          sed do eiusmod
+                        </div>
+                        <ul class="list-inline tags">
+                          <li><a href="" class="tag">JavaScript</a></li>
+                          <li><a href="" class="tag">ReactJs</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Single Snippet Box -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Profile -->
+        <footer>
+          Handcrafted with <span class="heart">💙</span> by Haftom, Tarekegn, Tekeste & Yirgalem
+        </footer>
+      </div>
+      <!-- build:js scripts/vendor.js -->
+      <!-- bower:js -->
+      <script src="/bower_components/jquery/dist/jquery.js"></script>
+      <!-- endbower -->
+      <!-- endbuild -->
+      <!-- build:js scripts/main.js -->
+      <script src="scripts/main.js"></script>
+      <script src="scripts/prism.js"></script>
+      <!-- endbuild -->
+    </body>
+  </html>

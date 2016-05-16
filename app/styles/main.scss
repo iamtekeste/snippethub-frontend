@@ -9,6 +9,7 @@ body {
   font-family: $regular-font;
   background-color:#EEE;
   a {
+    color:$primary-color;
     &:hover {
       text-decoration: none;
     }
@@ -37,4 +38,5 @@ h1 {
 @import "login";
 @import "register";
 @import "addSnippet";
+@import "profile";
 
