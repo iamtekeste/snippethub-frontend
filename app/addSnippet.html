@@ -33,10 +33,10 @@
         </div>
         <div class="modal-body">
           <form action="/tags/create" class="addTag">
-            <input type="text" class="form-control" placeholder="Tag name">
+            <input type="text" class="form-control" placeholder="Tag name" id="tag-name">
             <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Tag details"></textarea>
             <div class="modal-footer">
-              <input type="submit" value="Save tag" class="btn btn-primary">
+              <input type="submit" value="Save tag" class="btn btn-primary" id="save-tag">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </form>
@@ -94,7 +94,7 @@
                     <label class="radio-inline"><input type="radio" name="visiblity">Private</label>
                     <label class="radio-inline"><input type="radio" name="visiblity">Public</label>
                   </div>
-                  <select name="tags" id="tag-list" class="form-control">
+                  <select multiple name="tags" id="tag-list" class="form-control">
                     <option value="">Select Tag</option>
                     <option value="javascript">Recursion</option>
                     <option value="php">PHP</option>
@@ -118,6 +118,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/select2/dist/js/select2.full.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js scripts/plugins.js -->

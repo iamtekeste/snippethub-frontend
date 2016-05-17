@@ -5,6 +5,21 @@
 .visiblity-control {
 	margin-bottom: 10px;
 }
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-radius: 0;
+    border-color: #eee;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: #fff;
+}
+.select2-container--default .select2-selection--multiple {
+	border-radius: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	color:#fff;
+}
 .create-tag {
 	color:$primary-color;
 	display:block;
