@@ -14,8 +14,17 @@ body {
       text-decoration: none;
     }
   }
+  input.form-control, textarea.form-control {
+    border-radius:0px;
+    margin-bottom: 10px;
+  }
   input[type="radio"]:focus, input[type="checkbox"]:focus {
       outline: 0;
+  }
+  .btn-primary {
+    background-color:$primary-color;
+    color: #fff;
+    border-color:$primary-color;
   }
 }
 h1,ul{
